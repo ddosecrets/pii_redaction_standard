@@ -26,6 +26,8 @@ The repository consists of the following items:
 - Tests in `tests/` that confirm the functionality of the library
 - Code from related projects in `related/`, which can be used as a starting point, or as a reference of what other work has been done
 
+The `example_data` files are formatted such that each line is an example, white space, or a comment. Comment lines begin with `//` and non-comment.
+
 ## Considerations
 
 PII location is inherently going to be a fuzzy problem. Text can have typos or data transmission errors or all sorts of other issues that can mangle PII in a way that makes it hard to detect programmatically despite being perfectly interpretable to a human reader. Text extracted from document formats other than raw text also have the problem that document formats can do weird things with how they structure text, breaking text up into disjoint parts or inserting other information that mangles PII from the programmatic perspective but not the human perspective.
