@@ -1,0 +1,81 @@
+//
+// Email address validation is notoriously difficult and kind of the only real
+// way to validate them is to just send emails, however we can give some pretty
+// good examples of extremely broad email address patterns.
+//
+// One can say that generally they have an `@` then a somewhere after that a `.`
+// and what goes before, between, and after can't be whitespace.
+//
+// There are some confounds however: people try to avoid spammers and bots by
+// doing all sorts of funny tricks. We should also try to capture some of the
+// common ones.
+//
+// Here also are some links for obfuscation techniques that we may wish to
+// handle in the future:
+//
+//   https://perishablepress.com/best-method-for-email-obfuscation/
+//   https://www.howtogeek.com/129673/does-email-address-obfuscation-actually-prevent-spam/
+//
+
+
+
+// basic email
+user@example.com
+
+
+// mild anti-spam obfuscation
+user @ example.com
+user @ example .com
+user @ example. com
+user @ example . com
+user[@]example.com
+user@example[.]com
+user[@]example[.]com
+user(@)example.com
+user@example(.)com
+user(@)example(.)com
+
+user AT example.com
+user AT example. com
+user AT example .com
+user AT example . com
+
+user@example DOT com
+user@ example DOT com
+user @example DOT com
+user @ example DOT com
+
+user AT example DOT com
+user[AT]example[DOT]com
+user[AT]example[DOT] com
+user[AT]example [DOT]com
+user[AT]example [DOT] com
+user[AT] example[DOT]com
+user[AT] example[DOT] com
+user[AT] example [DOT]com
+user[AT] example [DOT] com
+user [AT]example[DOT]com
+user [AT]example[DOT] com
+user [AT]example [DOT]com
+user [AT]example [DOT] com
+user [AT] example[DOT]com
+user [AT] example[DOT] com
+user [AT] example [DOT]com
+user [AT] example [DOT] com
+
+user(AT)example(DOT)com
+user(AT)example(DOT) com
+user(AT)example (DOT)com
+user(AT)example (DOT) com
+user(AT) example(DOT)com
+user(AT) example(DOT) com
+user(AT) example (DOT)com
+user(AT) example (DOT) com
+user (AT)example(DOT)com
+user (AT)example(DOT) com
+user (AT)example (DOT)com
+user (AT)example (DOT) com
+user (AT) example(DOT)com
+user (AT) example(DOT) com
+user (AT) example (DOT)com
+user (AT) example (DOT) com
