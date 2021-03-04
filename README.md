@@ -10,7 +10,7 @@ Many different people and organizations, from journalists to scientists to medic
 2. A set of examples for those different kinds of PII, which are used to test...
 3. A library for finding the presence of that PII in text documents.
 
-This repository does ***not*** aim to be complete or comprehensive, covering all the possible kinds of PII, nor all the kinds of documents which may contain PII. Rather, it tries to provide a good first attempt that can be used as a reference point for further expansion.
+This repository does **_not_** aim to be complete or comprehensive, covering all the possible kinds of PII, nor all the kinds of documents which may contain PII. Rather, it tries to provide a good first attempt that can be used as a reference point for further expansion.
 
 ## Necessity for Openness and Peer Review
 
@@ -36,7 +36,7 @@ Ultimately, any PII location technique will need to be approximate, and needs to
 
 ## Definitions
 
-The kinds of PII that this repository is aimed at modelling currently are:
+The kinds of PII that this repository is aimed at modeling currently are:
 
 - US and CA phone numbers
 - email addresses
