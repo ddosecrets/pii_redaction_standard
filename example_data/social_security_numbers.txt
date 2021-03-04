@@ -1,0 +1,26 @@
+//
+// Social Security Numbers are very similar to phone numbers in many respects,
+// but have some different separators that sometimes get used.
+//
+
+123456789
+
+123 45 6789
+123 45-6789
+123 45.6789
+123 45/6789
+
+123-45 6789
+123-45-6789
+123-45.6789
+123-45/6789
+
+123.45 6789
+123.45-6789
+123.45.6789
+123.45/6789
+
+123/45 6789
+123/45-6789
+123/45.6789
+123/45/6789
