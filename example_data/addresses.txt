@@ -1,0 +1,63 @@
+//
+// Addresses can be super tricky because they contain alphabetical and numeric
+// characters, plus separators, and the formats for addresses are widely varied.
+// Additionally, there are both single-line and multi-line formats that people
+// use. We try here to only model single-line formats, but it would be good to
+// find ways to model multi-line formats as well.
+//
+// A good starting point is the language described by the regular expression
+//
+//   /,\s+[a-zA-Z][a-zA-Z]\s+[0-9][0-9][0-9][0-9][0-9][^0-9]/
+//
+// This identifies something that looks like the ", CA 90210", which in the US
+// is a common way to end an address: comma separating the city from the state,
+// followed by a 5 digit zip. We can extend this with more parts, such as the
+// street numbers, etc., to the examples to try to pin down the full address.
+//
+
+123 street road some city ny 45678
+123 street road some city, ny 45678
+123 street road, some city ny 45678
+123 street road, some city, ny 45678
+
+123b street road some city ny 45678
+123b street road some city, ny 45678
+123b street road, some city ny 45678
+123b street road, some city, ny 45678
+
+123-1 street road some city ny 45678
+123-1 street road some city, ny 45678
+123-1 street road, some city ny 45678
+123-1 street road, some city, ny 45678
+
+
+123 street road some city ny 45678 9012
+123 street road some city, ny 45678 9012
+123 street road, some city ny 45678 9012
+123 street road, some city, ny 45678 9012
+
+123b street road some city ny 45678 9012
+123b street road some city, ny 45678 9012
+123b street road, some city ny 45678 9012
+123b street road, some city, ny 45678 9012
+
+123-1 street road some city ny 45678 9012
+123-1 street road some city, ny 45678 9012
+123-1 street road, some city ny 45678 9012
+123-1 street road, some city, ny 45678 9012
+
+
+123 street road some city ny 45678-9012
+123 street road some city, ny 45678-9012
+123 street road, some city ny 45678-9012
+123 street road, some city, ny 45678-9012
+
+123b street road some city ny 45678-9012
+123b street road some city, ny 45678-9012
+123b street road, some city ny 45678-9012
+123b street road, some city, ny 45678-9012
+
+123-1 street road some city ny 45678-9012
+123-1 street road some city, ny 45678-9012
+123-1 street road, some city ny 45678-9012
+123-1 street road, some city, ny 45678-9012
