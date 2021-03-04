@@ -33,3 +33,24 @@ PII location is inherently going to be a fuzzy problem. Text can have typos or d
 PII in documents such as images or video, while potentially textual, may be even harder to detect, because OCR is unreliable, and the conversion to text often mangles PII greatly. Additionally, the process of locating the PII spatially in the image or video makes automatic redaction much harder than textual redaction. Audio and other methods of conveying PII add further complications to both detection and redaction.
 
 Ultimately, any PII location technique will need to be approximate, and needs to err on the side of caution. A journalist can always ask to unredact a part of redacted text if they ever suspect that it's not in fact PII but rather an error. The reverse is not possible: we cannot un-release someone's home address or phone number. We therefore should aim to build PII location tools that have no false negatives, but possibly some false positives.
+
+## Definitions
+
+The kinds of PII that this repository is aimed at modelling currently are:
+
+- US and CA phone numbers
+- email addresses
+- US social security numbers (SSNs)
+- US and CA addresses
+
+We aim to flesh this out to identify:
+
+- International phone numbers
+- National identification numbers more broadly
+- National and sub-national identity card numbers (eg. state IDs, drivers license numbers)
+- Passport numbers
+- Bank account numbers
+- Credit and debit card numbers
+- License plate numbers
+
+Eventually it may also make sense to try to identify further things such as videos and photographs that include faces, houses, cards, etc., as well as speech, as those can also be used to some degree to identify people, especially in the age of crowdsourcing via social media.
