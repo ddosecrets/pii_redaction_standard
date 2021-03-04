@@ -54,3 +54,5 @@ We aim to flesh this out to identify:
 - License plate numbers
 
 Eventually it may also make sense to try to identify further things such as videos and photographs that include faces, houses, cards, etc., as well as speech, as those can also be used to some degree to identify people, especially in the age of crowdsourcing via social media.
+
+A further future area to consider is what might be called contextually determined PII. For example, while a number such as `123456789` does not necessarily have any particular role as a social security number or whatnot, it has a higher probability of being one if it's preceded by the words "their social security number is". This will be especially relevant when dealing with numeric content because lots of things are numbers but not PII, and so it can lead to excessive redactions if literally every number is treated as PII.
