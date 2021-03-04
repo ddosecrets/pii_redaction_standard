@@ -59,6 +59,10 @@ Eventually it may also make sense to try to identify further things such as vide
 
 A further future area to consider is what might be called contextually determined PII. For example, while a number such as `123456789` does not necessarily have any particular role as a social security number or whatnot, it has a higher probability of being one if it's preceded by the words "their social security number is". This will be especially relevant when dealing with numeric content because lots of things are numbers but not PII, and so it can lead to excessive redactions if literally every number is treated as PII.
 
+## Design Space
+
+The space of possible designs for software that locates PII is potentially quite broad. An initial approach of using regular expressions to process text is a good place to start. Further work, using, for instance, established NLP tools for tagging text, would be useful too. But importantly, there is no silver bullet. There are instead a variety of options, all of which should be used _simultaneously_ to catch as many instances of PII as possible.
+
 ## Contributor Guidelines
 
 If you wish to contribute to this project, that's great! We really appreciate contributions, because the only way this will ever have any chance of being truly reliable is to have many different perspectives and experiences looking at the problem trying to solve it. We strongly encourage you to make PRs, and simply request that your PRs come in one of three forms:
