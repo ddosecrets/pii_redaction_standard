@@ -58,3 +58,15 @@ We aim to flesh this out to identify:
 Eventually it may also make sense to try to identify further things such as videos and photographs that include faces, houses, cards, etc., as well as speech, as those can also be used to some degree to identify people, especially in the age of crowdsourcing via social media.
 
 A further future area to consider is what might be called contextually determined PII. For example, while a number such as `123456789` does not necessarily have any particular role as a social security number or whatnot, it has a higher probability of being one if it's preceded by the words "their social security number is". This will be especially relevant when dealing with numeric content because lots of things are numbers but not PII, and so it can lead to excessive redactions if literally every number is treated as PII.
+
+## Contributor Guidelines
+
+If you wish to contribute to this project, that's great! We really appreciate contributions, because the only way this will ever have any chance of being truly reliable is to have many different perspectives and experiences looking at the problem trying to solve it. We strongly encourage you to make PRs, and simply request that your PRs come in one of three forms:
+
+1. Exclusively updates to example data
+2. Exclusively updates to code (redacter or tests)
+3. Everything else
+
+It's easier to evaluate changes when they're conceptually separated like this. If you make a PR that combines multiple of these, there ought to be a good justification that's explained in the PR notes.
+
+Furthermore, we expect contributors to interact with one another respectfully and compassionately. Do not bring your -ism's into this project, and if we find that you're a racist, a sexist, a transphobe, a homophobe, whatever, we **_will_** kick you out.
