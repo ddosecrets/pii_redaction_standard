@@ -12,6 +12,10 @@ Many different people and organizations, from journalists to scientists to medic
 
 This repository does ***not*** aim to be complete or comprehensive, covering all the possible kinds of PII, nor all the kinds of documents which may contain PII. Rather, it tries to provide a good first attempt that can be used as a reference point for further expansion.
 
+## Necessity for Openness and Peer Review
+
+We believe that having work like this be done out in the open, and subject to the review of our peers, is important to prevent redaction from being alchemy. We may have useful redaction techniques, but we're not infallible, and the safety of the people who's PII may be leaked by incomplete example data, buggy code, or erroneous assumptions is a top priority. It's also in the interests of other researchers and organizations to have easy to use and modify tools available to them. Lastly, by making reliable tools widely available, the task of journalists, scientists, etc. becomes easier and thus more of it can be done.
+
 ## Contents
 
 The repository consists of the following items:
@@ -20,6 +24,7 @@ The repository consists of the following items:
 - Example data, found in `example_data/`
 - A baseline library in `library/`, written in Python, which defines functions that will locate PII in text
 - Tests in `tests/` that confirm the functionality of the library
+- Code from related projects in `related/`, which can be used as a starting point, or as a reference of what other work has been done
 
 ## Considerations
 
