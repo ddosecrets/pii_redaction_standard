@@ -3,7 +3,7 @@
 // folk formats. It's important to capture all of them, as well as weird blends,
 // so a good starting place is the following regex:
 //
-//   (\+?\1)?((\d\d\d|\(\d\d\d\))[\.\-\ ]\d\d\d[\.\-\ ]\d\d\d\d)
+//   (\+?\1)?((\d\d\d|\(\d\d\d\))[\.\-\ ]?\d\d\d[\.\-\ ]?\d\d\d\d)
 //
 // It might also make sense to incorporate extensions as well, eg. with a suffix
 // of the form `ext\.? \d+`, but for now we omit this because extensions by
