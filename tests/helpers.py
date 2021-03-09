@@ -25,6 +25,10 @@ def blank_line(line):
 
 def test_modules(modules, positives, negatives):
 
+    print()
+    print('Testing %i positives, %i negatives.' %
+          (len(positives), len(negatives)))
+
     for mod in modules:
 
         print()
