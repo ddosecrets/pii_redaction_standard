@@ -1,8 +1,8 @@
-// looks like a social security number
-123456789
-123 45 6789
-123-45-6789
-123.45.6789
+// looks like a phone number
+1234567890
+123 456 7890
+123-456-7890
+123.456.7890
 
 // looks like a serial number or shipment tracking number or credit card number
 1234567890123456
