@@ -74,3 +74,19 @@ If you wish to contribute to this project, that's great! We really appreciate co
 It's easier to evaluate changes when they're conceptually separated like this. If you make a PR that combines multiple of these, there ought to be a good justification that's explained in the PR notes.
 
 Furthermore, we expect contributors to interact with one another respectfully and compassionately. Do not bring your -ism's into this project, and if we find that you're a racist, a sexist, a transphobe, a homophobe, whatever, we **_will_** kick you out.
+
+## Running Tests
+
+You must set up your Python path first before running tests:
+
+```
+$ export PYTHONPATH=$PYTHONPATH:$(pwd)
+```
+
+Once you've done this, you can simply run
+
+```
+python3 tests/test_blah.py
+```
+
+from the project root directory.
