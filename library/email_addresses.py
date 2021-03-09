@@ -1,4 +1,4 @@
-# phone number locator
+# email address locator
 
 
 import re
